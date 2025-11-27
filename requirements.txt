@@ -1,0 +1,7 @@
+streamlit
+pandas
+matplotlib
+numpy
+espn-api
+openai
+python-dotenv
