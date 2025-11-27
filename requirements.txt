@@ -5,3 +5,4 @@ numpy
 espn-api
 openai
 python-dotenv
+requests
