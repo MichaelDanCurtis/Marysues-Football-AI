@@ -2,6 +2,8 @@
 
 A comprehensive Python-based system for fantasy football analysis, projections, and winner prediction using statistical modeling and Monte Carlo simulations.
 
+> **🔒 Security Note**: This project uses API keys. See [SECURITY.md](SECURITY.md) for proper key management.
+
 ## Overview
 
 This framework provides everything you need to:
@@ -416,6 +418,19 @@ Run the included examples:
 ```bash
 python fantasy_football_simulation.py      # Basic demo
 python fantasy_football_examples.py        # Advanced examples
+```
+
+## Security
+
+For information about API key management and security best practices, see [SECURITY.md](SECURITY.md).
+
+**Quick Setup:**
+```bash
+# Copy the environment template
+cp .env.example .env
+
+# Edit .env and add your API keys
+# The .env file is already in .gitignore
 ```
 
 ## Support & Resources
