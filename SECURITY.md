@@ -53,8 +53,9 @@ This repository uses [Gitleaks](https://github.com/gitleaks/gitleaks) to prevent
 brew install gitleaks
 
 # Install gitleaks (Linux)
-wget https://github.com/gitleaks/gitleaks/releases/download/v8.18.1/gitleaks_8.18.1_linux_x64.tar.gz
-tar -xzf gitleaks_8.18.1_linux_x64.tar.gz
+# Download the latest release from: https://github.com/gitleaks/gitleaks/releases/latest
+wget https://github.com/gitleaks/gitleaks/releases/latest/download/gitleaks_linux_x64.tar.gz
+tar -xzf gitleaks_linux_x64.tar.gz
 
 # Scan for secrets
 gitleaks detect --source . --verbose

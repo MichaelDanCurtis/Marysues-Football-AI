@@ -8,7 +8,7 @@ useDefault = true
 [[rules]]
 id = "openrouter-api-key"
 description = "OpenRouter API Key"
-regex = '''sk-or-v1-[a-zA-Z0-9]{64,}'''
+regex = '''sk-or-v1-[a-zA-Z0-9_-]{32,}'''
 keywords = [
     "openrouter",
     "sk-or",
@@ -27,13 +27,12 @@ keywords = [
 [[rules]]
 id = "env-file-key-value"
 description = "Environment file with key=value pattern"
-regex = '''(?i)(secret|password|token|api[_-]?key)=[a-zA-Z0-9_\-]{10,}'''
+regex = '''(?i)(secret|password|token|api[_-]?key)=[a-zA-Z0-9_\-+=/.]{10,}'''
 path = '''\.env$'''
 
 [allowlist]
 description = "Allowlist for false positives"
 paths = [
-    '''(.*?)\.md$''',  # Documentation files with example keys
-    '''(.*?)\.txt$''',  # Text files
+    '''SECURITY\.md$''',  # Security documentation with example keys
     '''\.env\.example$''',  # Example environment file with placeholders
 ]
