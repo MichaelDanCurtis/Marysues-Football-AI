@@ -28,7 +28,7 @@ keywords = [
 id = "env-file-key-value"
 description = "Environment file with key=value pattern"
 regex = '''(?i)(secret|password|token|api[_-]?key)=[a-zA-Z0-9_\-]{10,}'''
-path = '''\.env.*'''
+path = '''\.env$'''
 
 [allowlist]
 description = "Allowlist for false positives"
