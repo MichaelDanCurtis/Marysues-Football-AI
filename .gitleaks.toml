@@ -35,4 +35,5 @@ description = "Allowlist for false positives"
 paths = [
     '''(.*?)\.md$''',  # Documentation files with example keys
     '''(.*?)\.txt$''',  # Text files
+    '''\.env\.example$''',  # Example environment file with placeholders
 ]
